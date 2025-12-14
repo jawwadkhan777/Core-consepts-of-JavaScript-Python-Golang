@@ -119,4 +119,61 @@ Asynchronous behavior is implemented using Python’s `asyncio` library to simul
 
 ```bash
 python app.py
+```
 
+---
+
+## 📌 Part 3: User Management System (Golang)
+
+### 📄 Project Description
+
+This project is a **terminal-based User Management System** implemented using **Golang (Go)**.  
+It is conceptually similar to the JavaScript and Python versions and focuses on **core programming and concurrency concepts** rather than UI.
+
+The application allows users to:
+
+- Add users
+- Update users
+- Delete users
+- View all users
+
+Asynchronous behavior is simulated using **goroutines**, **channels**, and `time.Sleep`, which act as Go’s equivalent to JavaScript’s `async/await`, Promises, and `setTimeout`.
+
+---
+
+### 📂 Project Structure
+
+```
+/golang-user-management
+│
+└── main.go
+```
+
+
+---
+
+### 🧠 Core Concepts Used (Golang)
+
+- **Slices** – Used as dynamic arrays to store users.
+- **Structs** – Each user is represented as a strongly-typed struct (`ID`, `Name`, `Email`).
+- **Functions** – Separate functions handle add, update, delete, and list operations.
+- **Callbacks** – Functions are passed as arguments and executed after asynchronous completion.
+- **Goroutines** – Lightweight threads used to simulate asynchronous execution.
+- **Channels** – Used to send results back from goroutines (similar to Promise resolve/reject).
+- **Async / Await Equivalent** – Implemented using goroutines + channels instead of language keywords.
+- **setTimeout Equivalent** – `time.Sleep()` simulates delayed execution (e.g., server response).
+- **Unix Epoch Time** – `time.Now().UnixMilli()` is used to generate unique user IDs.
+
+---
+
+### ▶️ How to Run (Golang)
+
+1. Ensure **Go** is installed on your system.
+   Verify installation using:
+   ```bash
+   go version
+   ```
+2. Run the application:
+   ```
+   go run main.go
+   ```
