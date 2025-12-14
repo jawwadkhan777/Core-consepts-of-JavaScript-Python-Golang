@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>User Management System</title>
+</head>
+<body>
+
+  <h2>User Management System (Vanilla JS)</h2>
+
+  <div>
+    <h3>Add User</h3>
+    <input id="name" placeholder="Name" />
+    <input id="email" placeholder="Email" />
+    <button onclick="handleAddUser()">Add User</button>
+  </div>
+
+  <hr>
+
+  <div>
+    <h3>Users List</h3>
+    <button onclick="loadUsersUI()">Refresh List</button>
+    <ul id="usersList"></ul>
+  </div>
+
+  <hr>
+
+  <div>
+    <h3>Async/Await Example (Fetch Users)</h3>
+    <button onclick="runAsyncFetch()">Run Async Fetch</button>
+    <pre id="asyncOutput"></pre>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
